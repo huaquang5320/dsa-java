@@ -6,6 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * LeetCode #49 - Group Anagrams
+ * https://leetcode.com/problems/group-anagrams/
+ *
+ * Time: O(n * k) — n strings, k = max string length
+ * Space: O(n * k) — storing all strings in map
+ */
 public class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
